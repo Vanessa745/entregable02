@@ -1,0 +1,4807 @@
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+.caprasimo-regular {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body {
+    margin: 0;
+}
+
+/*MENU*/
+
+.menu-cabecera {
+    background-color:  rgb(255, 185, 205);
+    display: flex;
+    flex-direction: row;
+    height: 11vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0.5px 2px rgb(0, 0, 0, 0.1);
+}
+
+/* .evento-desplegable {
+    display: none;
+} */
+
+.btn-menu-desplegable {
+    /* background-color: aqua; */
+    flex-basis: 22%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    padding-left: 2%;
+}
+
+.btn-menu-desplegable label {
+    /* background-color: salmon; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .evento-desplegable:checked ~ .sobrepantalla-trans {
+    display: block;
+}
+
+.evento-desplegable:checked ~ .cont-padre-desplegable {
+    display: flex;
+} */
+
+.icono {
+    /* background-color: burlywood; */
+    flex-basis: 10%;
+    height: 40%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .icono label {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.icono-despl {
+    /* background-color: chartreuse; */
+    /* width: 100%;
+    height: 100%; */
+    font-size: 1.7rem;
+}
+
+.cont-text-btn {
+    /* background-color: chocolate; */
+    flex-basis: 20%;
+    display: flex;
+    height: 40%;
+    align-items: center;
+}
+
+/* .cont-text-btn label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+.text-btn {
+    border: none;
+    /* background-color: blue; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.titulo-inicio {
+    /* background-color: green; */
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-cabecera {
+    width: 20%;
+    /* flex-basis: 50%; */
+    /* background-color: cadetblue; */
+}
+
+.aside-right {
+    /* background-color: sandybrown; */
+    flex-basis: 25%;
+    flex-grow: 2;
+    flex-shrink: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-padre-btn {
+    /* background-color: tomato; */
+    flex-basis: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.cont-btn-order-nav {
+    background-color: black;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.boton-order-nav {
+    /* background-color: rosybrown; */
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#evento-desplegable {
+    display: none;
+}
+
+#evento-desplegable:checked ~ .sobrepantalla-trans {
+    display: block;
+}
+
+#evento-desplegable:checked ~ .cont-padre-desplegable {
+    display: flex;
+}
+
+/* .btn-menu-desplegable:hover ~ .sobrepantalla-trans {
+    display: block;
+}
+
+.btn-menu-desplegable:hover ~ .cont-padre-desplegable {
+    display: flex;
+} */
+
+/*SOBREPANTALLA SEMITRANSPARENTE*/
+
+.sobrepantalla-trans {
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+    position: fixed;
+    display: none;
+}
+
+/*DESPLEGABLE*/
+
+.evento-cerrar {
+    display: none;
+}
+
+.evento-cerrar:checked ~ .sobrepantalla-trans {
+    display: none;
+}
+
+.evento-cerrar:checked ~ .cont-padre-desplegable {
+    display: none;
+}
+
+.cont-padre-desplegable {
+    background-color: white;
+    position: fixed;
+    z-index: 15;
+    height: 100vh;
+    width: 25vw;
+    display: none;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.cont-signin-btn {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-signin {
+    /* background-color: bisque; */
+    flex-basis: 78%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.text-signin h3 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    display: block;
+    /* background-color: brown; */
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+.cont-btn-cerrar {
+    /* background-color: darkcyan; */
+    flex-basis: 22%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-btn-cerrar label {
+    width: 60%;
+    height: 45%;
+    /* background-color: blue; */
+    border-radius: 25px;
+}
+
+.btn-cerrar {
+    /* background-color: pink; */
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.icon-cerrar {
+    font-size: 2rem;
+}
+
+.cont-list-op {
+    /* background-color: bisque; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.list-op {
+    /* background-color: darkkhaki; */
+    list-style: none;
+    padding: 0;
+    width: 93%;
+}
+
+.item-list {
+    /* background-color: darksalmon; */
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-item {
+    text-decoration: none;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    display: block;
+    /* background-color: brown; */
+    width: 100%;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+.text-signin h3:hover {
+    color: rgb(255, 185, 205);
+}
+
+.btn-cerrar:hover {
+    background-color: rgb(255, 185, 205);
+    border: none;
+}
+
+#text-home:hover {
+    color: rgb(255, 185, 205);
+}
+
+#text-order:hover {
+    color: rgb(255, 185, 205);
+}
+
+#text-location:hover {
+    color: rgb(255, 185, 205);
+}
+
+#text-catering:hover {
+    color: rgb(255, 185, 205);
+}
+
+#text-gift:hover {
+    color: rgb(255, 185, 205);
+}
+
+#text-merch:hover {
+    color: rgb(255, 185, 205);
+}
+
+/*CUADRO MULTIMEDIA*/
+
+.cont-multimedia {
+    /* background-color: bisque; */
+    height: 80vh;
+    height: 80svh;
+    width: 100%;
+    z-index: 8;
+}
+
+/*PROMO VIDEO*/
+
+.prom-video {
+    /* background-color: greenyellow; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+
+.video {
+    /* background-color: lightgreen; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 5;
+    /* flex-basis: 100%; */
+}
+
+.cont-btns {
+    position: absolute;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 6;
+}
+
+.cont-btn-barra {
+    /* background-color: rgb(210, 105, 30); */
+    flex-basis: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.btn-promo {
+    /* background-color: green; */
+    width: 100%;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-promo div {
+    background-color: black;
+    flex-basis: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.btn-promo a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.barra {
+    flex-basis: 20%;
+    display: none;
+    /* background-color: salmon; */
+}
+
+.cont-btn-video {
+    /* background-color: rgb(238, 130, 238); */
+    flex-basis: 8%;
+    width: 100%;
+    /* position: absolute; */
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.cont-btn-control {
+    /* background-color: coral; */
+    width: 5%;
+    /* height: 80%; */
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    justify-content: center;
+}
+
+.btn-control {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.icono-pause {
+    font-size: 1.3rem;
+}
+
+/*PRINCIPAL*/
+
+.contenido-principal {
+    width: 100%;
+}
+
+.principal {
+    /* background-color: rgb(0, 255, 255, 0.4); */
+    width: 100%;
+    /* height: 5000px; */
+}
+
+.cont-padre-fecha {
+    /* background-color: thistle; */
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-hijo-fecha {
+    /* background-color: yellowgreen; */
+    flex-basis: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.fecha {
+    background-color:  rgb(255, 185, 205);
+    height: 30%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.fecha p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: black;
+    /* background-color: bisque; */
+}
+
+.cont-titulo-principal {
+    /* background-color: bisque; */
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-hijo-titulo {
+    /* background-color: cadetblue; */
+    height: 70%;
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tit-princ {
+    /* background-color: darkkhaki; */
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tit-princ p {
+    font-family: 'Poetsen One', sans-serif;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 5rem;
+    font-weight: lighter;
+    color: black;
+    display: block;
+}
+
+/*CARD CONTENEDORES GÉNERICOS*/
+
+.cont-padre-cookie {
+    /* background-color: bisque; */
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-hijo-cookie {
+    /* background-color: cadetblue; */
+    height: 100%;
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*BOTONES GÉNERICOS DE CARD*/
+
+.c-btn1 {
+    /* background-color: darkcyan; */
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.c-btn1 a {
+    color: black;
+    text-decoration: none;
+    /* background-color: darkgoldenrod; */
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.c-btn2 {
+    /* background-color: darkcyan; */
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.c-btn2 a {
+    color: black;
+    /* background-color: darkgoldenrod; */
+    width: 100%;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 550;
+    transition: all 0.5s ease;
+}
+
+/*CARD 1*/
+
+.cont-imagen-cookie1 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie1 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest1 {
+    /* background-color: rgb(103, 61, 40); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 35px 0 0 35px;
+    transition: all 0.5s ease;
+}
+
+.cookie1 {
+    transform: scaleX(-1);
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie1 {
+    /* background-color: rgb(103, 61, 40); */
+    flex-basis: 50%;
+    height: 80%;
+    border-radius: 0 35px 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie1 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie1 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-cookie1 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+}
+
+.descripcion-cookie1 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie1 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie1 {
+    height: 15%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie1 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie1 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie1 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie1-trans:hover .fondo-rest1,
+.cookie1-trans:hover .cont-info-cookie1 {
+    background-color: rgb(103, 61, 40);
+}
+
+.cookie1-trans:hover h2,
+.cookie1-trans:hover p {
+    color: white;
+}
+
+.cookie1-trans:hover .btn1-cookie1 {
+    width: 30%;
+}
+
+.cookie1-trans:hover .cookie1-btn1 {
+    border: 1px solid white;
+    width: 75%;
+}
+
+.cookie1-trans:hover .text-btn1-cookie1 {
+    color:white;
+}
+
+.cookie1-trans:hover .cookie1-btn2 {
+    background-color: white;
+}
+
+.cookie1-trans:hover .text-btn2-cookie1 {
+    color: rgb(103, 61, 40);
+}
+
+/*CARD 2*/
+
+.cont-imagen-cookie2 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie2 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest2 {
+    /* background-color: rgb(191, 141, 91); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 0 35px 35px 0;
+    transition: all 0.5s ease;
+}
+
+.cookie2 {
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie2 {
+    /* background-color: rgb(191, 141, 91); */
+    flex-basis: 55%;
+    height: 80%;
+    border-radius: 35px 0 0 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie2 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie2 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie2 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+.titulo-cookie2 p {
+    font-family: "Patrick Hand", cursive;
+    /* background-color: cadetblue; */
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.descripcion-cookie2 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie2 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie2 {
+    height: 20%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie2 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie2 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie2 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie2-trans:hover .fondo-rest2,
+.cookie2-trans:hover .cont-info-cookie2 {
+    background-color: rgb(191, 141, 91);
+}
+
+.cookie2-trans:hover .btn1-cookie2 {
+    width: 30%;
+}
+
+.cookie2-trans:hover .cookie2-btn1 {
+    border: 1px solid black;
+    width: 75%;
+}
+
+.cookie2-trans:hover .cookie2-btn2 {
+    background-color: black;
+}
+
+.cookie2-trans:hover .text-btn2-cookie2 {
+    color: rgb(191, 141, 91);
+}
+
+/*CARD 3*/
+
+.cont-imagen-cookie3 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie3 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest3 {
+    /* background-color: rgb(103, 61, 40); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 35px 0 0 35px;
+    transition: all 0.5s ease;
+}
+
+.cookie3 {
+    transform: scaleX(-1);
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie3 {
+    /* background-color: rgb(103, 61, 40); */
+    flex-basis: 55%;
+    height: 80%;
+    border-radius: 0 35px 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie3 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie3 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie3 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+.titulo-cookie3 p {
+    font-family: "Patrick Hand", cursive;
+    /* background-color: cadetblue; */
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.descripcion-cookie3 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie3 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie3 {
+    height: 15%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie3 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie3 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie3 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie3-trans:hover .fondo-rest3,
+.cookie3-trans:hover .cont-info-cookie3 {
+    background-color: rgb(242, 216, 146);
+}
+
+.cookie3-trans:hover .btn1-cookie3 {
+    width: 30%;
+}
+
+.cookie3-trans:hover .cookie3-btn1 {
+    border: 1px solid black;
+    width: 75%;
+}
+
+.cookie3-trans:hover .cookie3-btn2 {
+    background-color: black;
+}
+
+.cookie3-trans:hover .text-btn2-cookie3 {
+    color: rgb(242, 216, 146);
+}
+
+/*CARD 4*/
+
+.cont-imagen-cookie4 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie4 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest4 {
+    /* background-color: rgb(191, 141, 91); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 0 35px 35px 0;
+    transition: all 0.5s ease;
+}
+
+.cookie4 {
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie4 {
+    /* background-color: rgb(191, 141, 91); */
+    flex-basis: 55%;
+    height: 80%;
+    border-radius: 35px 0 0 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie4 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie4 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie4 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+.descripcion-cookie4 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie4 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie4 {
+    height: 20%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie4 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie4 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie4 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie4-trans:hover .fondo-rest4,
+.cookie4-trans:hover .cont-info-cookie4 {
+    background-color: rgb(241, 66, 124);
+}
+
+.cookie4-trans:hover .btn1-cookie4 {
+    width: 30%;
+}
+
+.cookie4-trans:hover .cookie4-btn1 {
+    border: 1px solid black;
+    width: 75%;
+}
+
+.cookie4-trans:hover .cookie4-btn2 {
+    background-color: black;
+}
+
+.cookie4-trans:hover .text-btn2-cookie4 {
+    color: rgb(241, 66, 124);
+}
+
+/*CARD 5*/
+
+.cont-imagen-cookie5 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie5 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest5 {
+    /* background-color: rgb(103, 61, 40); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 35px 0 0 35px;
+    transition: all 0.5s ease;
+}
+
+.cookie5 {
+    transform: scaleX(-1);
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie5 {
+    /* background-color: rgb(103, 61, 40); */
+    flex-basis: 60%;
+    height: 80%;
+    border-radius: 0 35px 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie5 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie5 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-cookie5 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+}
+
+.descripcion-cookie5 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie5 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie5 {
+    height: 15%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie5 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie5 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie5 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie5-trans:hover .fondo-rest5,
+.cookie5-trans:hover .cont-info-cookie5 {
+    background-color: rgb(115, 75, 58);
+}
+
+.cookie5-trans:hover h2,
+.cookie5-trans:hover p {
+    color: white;
+}
+
+.cookie5-trans:hover .btn1-cookie5 {
+    width: 30%;
+}
+
+.cookie5-trans:hover .cookie5-btn1 {
+    border: 1px solid white;
+    width: 75%;
+}
+
+.cookie5-trans:hover .text-btn1-cookie5 {
+    color:white;
+}
+
+.cookie5-trans:hover .cookie5-btn2 {
+    background-color: white;
+}
+
+.cookie5-trans:hover .text-btn2-cookie5 {
+    color: rgb(115, 75, 58);
+}
+
+/*CARD 6*/
+
+.cont-imagen-cookie6 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie6 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest6 {
+    /* background-color: rgb(191, 141, 91); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 0 35px 35px 0;
+    transition: all 0.5s ease;
+}
+
+.cookie6 {
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie6 {
+    /* background-color: rgb(191, 141, 91); */
+    flex-basis: 55%;
+    height: 80%;
+    border-radius: 35px 0 0 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie6 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie6 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie6 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+.descripcion-cookie6 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie6 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie6 {
+    height: 20%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie6 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie6 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie6 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie6-trans:hover .fondo-rest6,
+.cookie6-trans:hover .cont-info-cookie6 {
+    background-color: rgb(251, 152, 48);
+}
+
+.cookie6-trans:hover .btn1-cookie6 {
+    width: 30%;
+}
+
+.cookie6-trans:hover .cookie6-btn1 {
+    border: 1px solid black;
+    width: 75%;
+}
+
+.cookie6-trans:hover .cookie6-btn2 {
+    background-color: black;
+}
+
+.cookie6-trans:hover .text-btn2-cookie6 {
+    color: rgb(251, 152, 48);
+}
+
+/*CARD 7*/
+
+.cont-imagen-cookie7 {
+    /* background-color: rgb(210, 105, 30, 0.4); */
+    flex-basis: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-cookie7 {
+    /* background-color: rgb(138, 43, 226, 0.2); */
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+}
+
+.fondo-rest7 {
+    /* background-color: rgb(103, 61, 40); */
+    z-index: 6;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-radius: 35px 0 0 35px;
+    transition: all 0.5s ease;
+}
+
+.cookie7 {
+    transform: scaleX(-1);
+    object-fit: contain;
+    object-position:center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.cont-info-cookie7 {
+    /* background-color: rgb(103, 61, 40); */
+    flex-basis: 50%;
+    height: 80%;
+    border-radius: 0 35px 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cont-hijo-info-cookie7 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-cookie7 {
+    width: 100%;
+    /* background-color: royalblue; */
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-cookie7 h2 {
+    font-family: "Caprasimo", serif;
+    /* font-family: "Font Bold", sans-serif; */
+    color: black;
+    font-size: 4rem;
+    /* background-color: aqua; */
+    transition: all 0.5s ease;
+}
+
+.descripcion-cookie7 {
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-cookie7 p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    /* background-color: burlywood; */
+    transition: all 0.5s ease;
+}
+
+.cont-btns-cookie7 {
+    height: 15%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-hijo-btns-cookie7 {
+    /* background-color: aquamarine; */
+    flex-basis: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn1-cookie7 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.btn2-cookie7 {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 30%;
+}
+
+.cookie7-trans:hover .fondo-rest7,
+.cookie7-trans:hover .cont-info-cookie7 {
+    background-color: rgb(133, 6, 6);
+}
+
+.cookie7-trans:hover h2,
+.cookie7-trans:hover p {
+    color: white;
+}
+
+.cookie7-trans:hover .btn1-cookie7 {
+    width: 30%;
+}
+
+.cookie7-trans:hover .cookie7-btn1 {
+    border: 1px solid white;
+    width: 75%;
+}
+
+.cookie7-trans:hover .text-btn1-cookie7 {
+    color:white;
+}
+
+.cookie7-trans:hover .cookie7-btn2 {
+    background-color: white;
+}
+
+.cookie7-trans:hover .text-btn2-cookie7 {
+    color: rgb(133, 6, 6);
+}
+
+@media (min-width: 1101px) and (max-width: 1287px) {
+    body {
+        /* background-color: aqua; */
+    }
+
+    /* MENU */
+    
+    .icono {
+        flex-basis: 12%;
+    }
+    
+    .logo-cabecera {
+        width: 25%;
+    }
+
+    .cont-btn-order-nav {
+        width: 55%;
+    }
+
+    .boton-order-nav {
+        font-size: 1.1rem;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 30vw;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.8rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 13vh;
+    }
+    
+    .text-item {
+        font-size: 2.5rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 10%;
+    }
+    
+    .btn-promo div {
+        flex-basis: 11%;
+    }
+
+    .btn-promo a {
+        font-size: 1rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 7%;
+    }
+    
+    .cont-btn-control {
+        width: 4%;
+    }
+    
+    .btn-control {
+        width: 65%;
+    }
+
+    .icono-pause {
+        font-size: 1.1rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .cont-padre-fecha {
+        height: 15vh;
+    }
+
+    .fecha {
+        width: 22%;
+    }
+
+    .cont-titulo-principal {
+        height: 20vh;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 60vh;
+    }
+
+    /*CARD 1*/
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 70%;
+    } 
+
+    .titulo-cookie1 {
+        height: 25%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 2.8rem;
+    }
+    
+    .descripcion-cookie1 {
+        height: 35%;
+    }
+    
+    .descripcion-cookie1 p {
+        font-size: 1.1rem;
+    }
+    
+    .btn1-cookie1 {
+        width: 32%;
+    }
+    
+    .btn2-cookie1 {
+        width: 32%;
+    }
+
+    /*CARD 2*/
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 45%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 2.8rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 2.2rem;
+    }
+    
+    .descripcion-cookie2 {
+        height: 30%;
+    }
+    
+    .descripcion-cookie2 p {
+        font-size: 1.1rem;
+    }
+    
+    .btn1-cookie2 {
+        width: 30%;
+    }
+    
+    .btn2-cookie2 {
+        width: 32%;
+    }
+
+    /*CARD 3*/
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 40%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 2.8rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 2.2rem; 
+    }
+    
+    .descripcion-cookie3 {
+        height: 35%; 
+    }
+    
+    .descripcion-cookie3 p {
+        font-size: 1.1rem;
+    }
+    
+    .btn1-cookie3 {
+        width: 30%;
+    }
+    
+    .btn2-cookie3 {
+        width: 32%; 
+    }
+
+    /*CARD 4*/
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 2.8rem; 
+    }
+    
+    .descripcion-cookie4 p {
+        font-size: 1.1rem; 
+    }
+    
+    .btn1-cookie4 {
+        width: 30%; 
+    }
+    
+    .btn2-cookie4 {
+        width: 32%;
+    }
+
+    /*CARD 5*/
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 2.8rem; 
+    }
+    
+    .descripcion-cookie5 {
+        height: 18%;
+    }
+    
+    .descripcion-cookie5 p {
+        font-size: 1.1rem;
+    }
+    
+    .btn1-cookie5 {
+        width: 30%;
+    }
+    
+    .btn2-cookie5 {
+        width: 32%;
+    }
+
+    /*CARD 6*/
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+
+    .titulo-cookie6 {
+        height: 25%;
+    }
+    
+    .titulo-cookie6 h2 {
+        font-size: 2.8rem;
+    }
+    
+    .descripcion-cookie6 {
+        height: 35%; 
+    }
+    
+    .descripcion-cookie6 p {
+        font-size: 1.1rem; 
+    }
+    
+    .btn1-cookie6 {
+        width: 30%; 
+    }
+    
+    .btn2-cookie6 {
+        width: 32%;
+    }
+
+    /*CARD 7*/
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+    
+    .titulo-cookie7 h2 {
+        font-size: 2.8rem; 
+    }
+    
+    .descripcion-cookie7 {
+        height: 30%;
+    }
+    
+    .descripcion-cookie7 p {
+        font-size: 1.1rem; 
+    }
+    
+    .btn1-cookie7 {
+        width: 32%; 
+    }
+    
+    .btn2-cookie7 {
+        width: 32%;
+    }
+}
+
+@media (min-width: 866px) and (max-width: 1150px) {
+    body {
+        /* background-color: yellowgreen; */
+    }
+
+    /* MENU */
+
+    .menu-cabecera {
+        height: 7vh;
+    }
+
+    .btn-menu-desplegable {
+        padding-left: 3%;
+    }
+    
+    .btn-menu-desplegable label {
+        width: 80%;
+    }
+    
+    .icono {
+        flex-basis: 17%;
+    }
+
+    .icono-despl {
+        font-size: 1.3rem;
+    }
+    
+    .logo-cabecera {
+        width: 30%;
+    }
+
+    .cont-btn-order-nav {
+        width: 65%;
+    }
+
+    .boton-order-nav {
+        font-size: 1rem;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 35vw;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.8rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 13vh;
+    }
+    
+    .text-item {
+        font-size: 2.5rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 6%;
+    }
+    
+    .btn-promo {
+        justify-content: flex-start;
+        width: 92%;
+    }
+
+    .btn-promo div {
+        flex-basis: 15%;
+    }
+
+    .btn-promo a {
+        font-size: 1rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 4%;
+    }
+    
+    .cont-btn-control {
+        width: 5%;
+    }
+    
+    .btn-control {
+        width: 65%;
+    }
+
+    .icono-pause {
+        font-size: 1.1rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .cont-padre-fecha {
+        height: 15vh;
+    }
+
+    .fecha {
+        width: 25%;
+    }
+
+    .cont-titulo-principal {
+        height: 20vh;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 60vh;
+    }
+
+    /*BOTONES GÉNERICOS DE CARD*/
+
+    .c-btn1 a {
+        font-size: 1rem;
+    }
+
+    .c-btn2 a {
+        font-size: 1rem;
+    }
+
+    /*CARD 1*/
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 70%;
+    }
+
+    .titulo-cookie1 {
+        height: 20%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .descripcion-cookie1 {
+        height: 40%;
+    }
+    
+    .descripcion-cookie1 p {
+        font-size: 1rem;
+    }
+    
+    .btn1-cookie1 {
+        width: 40%;
+    }
+    
+    .btn2-cookie1 {
+        width: 38%;
+    }
+
+    .cookie1-trans:hover .btn1-cookie1 {
+        width: 42%;
+    }
+
+    .cookie1-trans:hover .btn2-cookie1 {
+        width: 40%;
+    }
+
+    /*CARD 2*/
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 40%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 2rem;
+    }
+    
+    .descripcion-cookie2 {
+        height: 28%;
+    }
+    
+    .descripcion-cookie2 p {
+        font-size: 1rem;
+    }
+    
+    .btn1-cookie2 {
+        width: 34%;
+    }
+    
+    .btn2-cookie2 {
+        width: 32%;
+    }
+
+    .cookie2-trans:hover .btn1-cookie2 {
+        width: 40%;
+    }
+
+    .cookie2-trans:hover .btn2-cookie2 {
+        width: 40%;
+    }
+
+    /*CARD 3*/
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 35%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 2rem; 
+    }
+    
+    .descripcion-cookie3 {
+        height: 35%; 
+    }
+    
+    .descripcion-cookie3 p {
+        font-size: 1rem;
+    }
+    
+    .btn1-cookie3 {
+        width: 34%;
+    }
+    
+    .btn2-cookie3 {
+        width: 32%; 
+    }
+
+    .cookie3-trans:hover .btn1-cookie3 {
+        width: 40%;
+    }
+
+    .cookie3-trans:hover .btn2-cookie3 {
+        width: 40%;
+    }
+
+    /*CARD 4*/
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .descripcion-cookie4 p {
+        font-size: 1rem; 
+    }
+    
+    .btn1-cookie4 {
+        width: 34%; 
+    }
+    
+    .btn2-cookie4 {
+        width: 32%;
+    }
+
+    .cookie4-trans:hover .btn1-cookie4 {
+        width: 40%;
+    }
+
+    .cookie4-trans:hover .btn2-cookie4 {
+        width: 40%;
+    }
+
+    /*CARD 5*/
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+
+    .titulo-cookie5 {
+        height: 20%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .descripcion-cookie5 {
+        height: 25%;
+    }
+    
+    .descripcion-cookie5 p {
+        font-size: 1rem;
+    }
+    
+    .btn1-cookie5 {
+        width: 34%;
+    }
+    
+    .btn2-cookie5 {
+        width: 32%;
+    }
+
+    .cookie5-trans:hover .btn1-cookie5 {
+        width: 42%;
+    }
+
+    .cookie5-trans:hover .btn2-cookie5 {
+        width: 40%;
+    }
+
+    /*CARD 6*/
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+
+    .titulo-cookie6 {
+        height: 20%;
+    }
+    
+    .titulo-cookie6 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .descripcion-cookie6 {
+        height: 38%; 
+    }
+    
+    .descripcion-cookie6 p {
+        font-size: 1rem; 
+    }
+    
+    .btn1-cookie6 {
+        width: 34%; 
+    }
+    
+    .btn2-cookie6 {
+        width: 32%;
+    }
+
+    .cookie6-trans:hover .btn1-cookie6 {
+        width: 40%;
+    }
+
+    .cookie6-trans:hover .btn2-cookie6 {
+        width: 40%;
+    }
+
+    /*CARD 7*/
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+    
+    .titulo-cookie7 h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .descripcion-cookie7 {
+        height: 30%;
+    }
+    
+    .descripcion-cookie7 p {
+        font-size: 1rem; 
+    }
+    
+    .btn1-cookie7 {
+        width: 36%; 
+    }
+    
+    .btn2-cookie7 {
+        width: 35%;
+    }
+
+    .cookie7-trans:hover .btn1-cookie7 {
+        width: 42%;
+    }
+
+    .cookie7-trans:hover .btn2-cookie7 {
+        width: 40%;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 865px) {
+    body {
+        /* background-color: lightcyan; */
+    }
+
+    /* MENU */
+
+    .menu-cabecera {
+        height: 9vh;
+    }
+
+    .btn-menu-desplegable {
+        padding-left: 3.5%;
+    }
+    
+    .btn-menu-desplegable label {
+        width: 80%;
+    }
+    
+    .icono {
+        flex-basis: 17%;
+    }
+
+    .icono-despl {
+        font-size: 1.2rem;
+    }
+    
+    .logo-cabecera {
+        width: 25%;
+    }
+
+    .cont-btn-order-nav {
+        width: 75%;
+    }
+
+    .boton-order-nav {
+        font-size: 1rem;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 45vw;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.6rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 10vh;
+    }
+    
+    .text-item {
+        font-size: 2rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 10%;
+    }
+    
+    .btn-promo {
+        justify-content: flex-start;
+        width: 92%;
+    }
+
+    .btn-promo div {
+        flex-basis: 18%;
+    }
+
+    .btn-promo a {
+        font-size: 1rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 7%;
+    }
+    
+    .cont-btn-control {
+        width: 5%;
+    }
+    
+    .btn-control {
+        width: 75%;
+    }
+
+    .icono-pause {
+        font-size: 1rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .cont-padre-fecha {
+        height: 15vh;
+    }
+
+    .fecha {
+        width: 28%;
+    }
+
+    .fecha p {
+        font-size: 1.2rem;
+    }
+
+    .cont-titulo-principal {
+        height: 10vh;
+    }
+
+    .tit-princ p {
+        font-size: 3rem;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 45vh;
+    }
+
+    /*BOTONES GÉNERICOS DE CARD*/
+
+    .c-btn1 a {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /*CARD 1*/
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 70%;
+    }
+
+    .titulo-cookie1 {
+        height: 60%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .descripcion-cookie1 {
+        display: none;
+    }
+    
+    .btn1-cookie1 {
+        width: 30%;
+    }
+
+    .cookie1-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie1 {
+        display: none;
+    }
+
+    .cookie1-trans:hover .fondo-rest1,
+    .cookie1-trans:hover .cont-info-cookie1 {
+        background-color: white;
+    }
+
+    .cookie1-trans:hover h2,
+    .cookie1-trans:hover p {
+        color: black;
+    }
+
+    .cookie1-trans:hover .btn1-cookie1 {
+        width: 30%;
+    }
+
+    .cookie1-trans:hover .cookie1-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie1-trans:hover .text-btn1-cookie1 {
+        color:black;
+    }
+
+    /*CARD 2*/
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 55%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 2rem;
+    }
+    
+    .descripcion-cookie2 {
+        display: none;
+    }
+    
+    .btn1-cookie2 {
+        width: 32%;
+    }
+    
+    .cookie2-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie2 {
+        display: none;
+    }
+
+    .cookie2-trans:hover .fondo-rest2,
+    .cookie2-trans:hover .cont-info-cookie2 {
+        background-color: white;
+    }
+
+    .cookie2-trans:hover .btn1-cookie2 {
+        width: 32%;
+    }
+
+    .cookie2-trans:hover .cookie2-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 3*/
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 55%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 2rem; 
+    }
+    
+    .descripcion-cookie3 {
+        display: none;
+    }
+    
+    .btn1-cookie3 {
+        width: 32%;
+    }
+    
+    .cookie3-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie3 {
+        display: none;
+    }
+
+    .cookie3-trans:hover .fondo-rest3,
+    .cookie3-trans:hover .cont-info-cookie3 {
+        background-color: white;
+    }
+
+    .cookie3-trans:hover .btn1-cookie3 {
+        width: 32%;
+    }
+
+    .cookie3-trans:hover .cookie3-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 4*/
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+
+    .titulo-cookie4 {
+        height: 45%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 2.5rem; 
+    }
+
+    .descripcion-cookie4 {
+        display: none;
+    }
+    
+    .btn1-cookie4 {
+        width: 32%; 
+    }
+    
+    .cookie4-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie4 {
+        display: none;
+    }
+
+    .cookie4-trans:hover .fondo-rest4,
+    .cookie4-trans:hover .cont-info-cookie4 {
+        background-color: white;
+    }
+
+    .cookie4-trans:hover .btn1-cookie4 {
+        width: 32%;
+    }
+
+    .cookie4-trans:hover .cookie4-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 5*/
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+
+    .titulo-cookie5 {
+        height: 50%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .descripcion-cookie5 {
+        display: none;
+    }
+    
+    .btn1-cookie5 {
+        width: 32%;
+    }
+    
+    .cookie5-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie5 {
+        display: none;
+    }
+
+    .cookie5-trans:hover .fondo-rest5,
+    .cookie5-trans:hover .cont-info-cookie5 {
+        background-color: white;
+    }
+
+    .cookie5-trans:hover h2,
+    .cookie5-trans:hover p {
+        color: black;
+    }
+
+    .cookie5-trans:hover .btn1-cookie5 {
+        width: 32%;
+    }
+
+    .cookie5-trans:hover .cookie5-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie5-trans:hover .text-btn1-cookie5 {
+        color:black;
+    }
+
+    /*CARD 6*/
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+    
+    .titulo-cookie6 {
+        height: 40%;
+    }
+
+    .titulo-cookie6 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .descripcion-cookie6 {
+        display: none;
+    }
+    
+    .btn1-cookie6 {
+        width: 32%; 
+    }
+    
+    .cookie6-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie6 {
+        display: none;
+    }
+
+    .cookie6-trans:hover .fondo-rest6,
+    .cookie6-trans:hover .cont-info-cookie6{
+        background-color: white;
+    }
+
+    .cookie6-trans:hover .btn1-cookie6 {
+        width: 32%;
+    }
+
+    .cookie6-trans:hover .cookie6-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 7*/
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+
+    .titulo-cookie7 {
+        height: 50%;
+    }
+
+    .titulo-cookie7 h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .descripcion-cookie7 {
+        display: none;
+    }
+    
+    .btn1-cookie7 {
+        width: 34%; 
+    }
+    
+    .cookie7-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie7 {
+        display: none;
+    }
+
+    .cookie7-trans:hover .fondo-rest7,
+    .cookie7-trans:hover .cont-info-cookie7 {
+        background-color: white;
+    }
+
+    .cookie7-trans:hover h2,
+    .cookie7-trans:hover p {
+        color: black;
+    }
+
+    .cookie7-trans:hover .btn1-cookie7 {
+        width: 34%;
+    }
+
+    .cookie7-trans:hover .cookie7-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie7-trans:hover .text-btn1-cookie7 {
+        color:black;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 720px) {
+    body {
+        /* background-color: lightgoldenrodyellow; */
+    }
+
+    /* MENU */
+
+    .menu-cabecera {
+        height: 8vh;
+    }
+
+    .btn-menu-desplegable {
+        padding-left: 3.5%;
+    }
+    
+    .btn-menu-desplegable label {
+        width: 80%;
+    }
+    
+    .icono {
+        flex-basis: 17%;
+    }
+
+    .icono-despl {
+        font-size: 1.2rem;
+    }
+
+    .cont-text-btn {
+        display: none;
+    }
+    
+    .logo-cabecera {
+        width: 30%;
+    }
+
+    .cont-padre-btn {
+        display: none;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 55vw;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.6rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 9.5vh;
+    }
+    
+    .text-item {
+        font-size: 1.9rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 10%;
+    }
+    
+    .btn-promo {
+        justify-content: flex-start;
+        width: 92%;
+    }
+
+    .btn-promo div {
+        flex-basis: 21%;
+    }
+
+    .btn-promo a {
+        font-size: 1rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 5%;
+    }
+    
+    .cont-btn-control {
+        width: 4%;
+    }
+    
+    .btn-control {
+        width: 85%;
+    }
+
+    .icono-pause {
+        font-size: 0.9rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .cont-padre-fecha {
+        height: 12vh;
+    }
+
+    .cont-hijo-fecha {
+        justify-content: center;
+    }
+
+    .fecha {
+        width: 28%;
+    }
+
+    .fecha p {
+        font-size: 1.1rem;
+    }
+
+    .cont-titulo-principal {
+        height: 8vh;
+    }
+
+    .tit-princ p {
+        font-size: 2.7rem;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 40vh;
+    }
+
+    /*BOTONES GÉNERICOS DE CARD*/
+
+    .c-btn1 a {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /*CARD 1*/
+
+    .cont-imagen-cookie1 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie1 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 70%;
+    }
+
+    .titulo-cookie1 {
+        height: 50%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 2rem;
+    }
+    
+    .descripcion-cookie1 {
+        display: none;
+    }
+    
+    .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie1 {
+        display: none;
+    }
+
+    .cookie1-trans:hover .fondo-rest1,
+    .cookie1-trans:hover .cont-info-cookie1 {
+        background-color: white;
+    }
+
+    .cookie1-trans:hover h2,
+    .cookie1-trans:hover p {
+        color: black;
+    }
+
+    .cookie1-trans:hover .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-trans:hover .cookie1-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie1-trans:hover .text-btn1-cookie1 {
+        color:black;
+    }
+
+    /*CARD 2*/
+
+    .cont-imagen-cookie2 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie2 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 55%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 2rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 1.5rem;
+    }
+    
+    .descripcion-cookie2 {
+        display: none;
+    }
+    
+    .btn1-cookie2 {
+        width: 50%;
+    }
+    
+    .cookie2-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie2 {
+        display: none;
+    }
+
+    .cookie2-trans:hover .fondo-rest2,
+    .cookie2-trans:hover .cont-info-cookie2 {
+        background-color: white;
+    }
+
+    .cookie2-trans:hover .btn1-cookie2 {
+        width: 50%;
+    }
+
+    .cookie2-trans:hover .cookie2-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 3*/
+
+    .cont-imagen-cookie3 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie3 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 55%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 2rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 1.5rem; 
+    }
+    
+    .descripcion-cookie3 {
+        display: none;
+    }
+    
+    .btn1-cookie3 {
+        width: 50%;
+    }
+    
+    .cookie3-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie3 {
+        display: none;
+    }
+
+    .cookie3-trans:hover .fondo-rest3,
+    .cookie3-trans:hover .cont-info-cookie3 {
+        background-color: white;
+    }
+
+    .cookie3-trans:hover .btn1-cookie3 {
+        width: 50%;
+    }
+
+    .cookie3-trans:hover .cookie3-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 4*/
+
+    .cont-imagen-cookie4 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie4 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+
+    .titulo-cookie4 {
+        height: 45%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 2rem; 
+    }
+
+    .descripcion-cookie4 {
+        display: none;
+    }
+    
+    .btn1-cookie4 {
+        width: 50%; 
+    }
+    
+    .cookie4-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie4 {
+        display: none;
+    }
+
+    .cookie4-trans:hover .fondo-rest4,
+    .cookie4-trans:hover .cont-info-cookie4 {
+        background-color: white;
+    }
+
+    .cookie4-trans:hover .btn1-cookie4 {
+        width: 50%;
+    }
+
+    .cookie4-trans:hover .cookie4-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 5*/
+
+    .cont-imagen-cookie5 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie5 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+
+    .titulo-cookie5 {
+        height: 50%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 2rem; 
+    }
+    
+    .descripcion-cookie5 {
+        display: none;
+    }
+    
+    .btn1-cookie5 {
+        width: 50%;
+    }
+    
+    .cookie5-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie5 {
+        display: none;
+    }
+
+    .cookie5-trans:hover .fondo-rest5,
+    .cookie5-trans:hover .cont-info-cookie5 {
+        background-color: white;
+    }
+
+    .cookie5-trans:hover h2,
+    .cookie5-trans:hover p {
+        color: black;
+    }
+
+    .cookie5-trans:hover .btn1-cookie5 {
+        width: 50%;
+    }
+
+    .cookie5-trans:hover .cookie5-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie5-trans:hover .text-btn1-cookie5 {
+        color:black;
+    }
+
+    /*CARD 6*/
+
+    .cont-imagen-cookie6 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie6 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+
+    .titulo-cookie6 {
+        height: 50%;
+    }
+    
+    .titulo-cookie6 h2 {
+        font-size: 2rem;
+    }
+    
+    .descripcion-cookie6 {
+        display: none;
+    }
+    
+    .btn1-cookie6 {
+        width: 50%; 
+    }
+    
+    .cookie6-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie6 {
+        display: none;
+    }
+
+    .cookie6-trans:hover .fondo-rest6,
+    .cookie6-trans:hover .cont-info-cookie6{
+        background-color: white;
+    }
+
+    .cookie6-trans:hover .btn1-cookie6 {
+        width: 50%;
+    }
+
+    .cookie6-trans:hover .cookie6-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 7*/
+
+    .cont-imagen-cookie7 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie7 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+
+    .titulo-cookie7 {
+        height: 55%;
+    }
+
+    .titulo-cookie7 h2 {
+        font-size: 2rem; 
+    }
+    
+    .descripcion-cookie7 {
+        display: none;
+    }
+    
+    .btn1-cookie7 {
+        width: 50%; 
+    }
+    
+    .cookie7-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie7 {
+        display: none;
+    }
+
+    .cookie7-trans:hover .fondo-rest7,
+    .cookie7-trans:hover .cont-info-cookie7 {
+        background-color: white;
+    }
+
+    .cookie7-trans:hover h2,
+    .cookie7-trans:hover p {
+        color: black;
+    }
+
+    .cookie7-trans:hover .btn1-cookie7 {
+        width: 50%;
+    }
+
+    .cookie7-trans:hover .cookie7-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie7-trans:hover .text-btn1-cookie7 {
+        color:black;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+    body {
+        /* background-color: lightcoral; */
+    }
+
+    /* MENU */
+
+    .menu-cabecera {
+        height: 8vh;
+    }
+
+    .btn-menu-desplegable {
+        padding-left: 3.5%;
+    }
+    
+    .btn-menu-desplegable label {
+        width: 80%;
+    }
+    
+    .icono {
+        flex-basis: 17%;
+    }
+
+    .icono-despl {
+        font-size: 1.3rem;
+    }
+
+    .cont-text-btn {
+        display: none;
+    }
+    
+    .logo-cabecera {
+        width: 50%;
+    }
+
+    .cont-padre-btn {
+        display: none;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 70vw;
+        border-radius: 0;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.6rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 9vh;
+    }
+    
+    .text-item {
+        font-size: 1.9rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 8%;
+    }
+    
+    .btn-promo {
+        justify-content: flex-start;
+        width: 92%;
+    }
+
+    .btn-promo div {
+        flex-basis: 30%;
+    }
+
+    .btn-promo a {
+        font-size: 0.9rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 4%;
+    }
+    
+    .cont-btn-control {
+        width: 5%;
+    }
+    
+    .btn-control {
+        width: 100%;
+    }
+
+    .icono-pause {
+        font-size: 0.7rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .cont-padre-fecha {
+        height: 9vh;
+    }
+
+    .cont-hijo-fecha {
+        justify-content: center;
+    }
+
+    .fecha {
+        width: 40%;
+        height: 40%;
+    }
+
+    .fecha p {
+        font-size: 1rem;
+    }
+
+    .cont-titulo-principal {
+        height: 8vh;
+    }
+
+    .tit-princ p {
+        font-size: 2.5rem;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 30vh;
+    }
+
+    /*BOTONES GÉNERICOS DE CARD*/
+
+    .c-btn1 a {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    /*CARD 1*/
+
+    .cont-imagen-cookie1 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie1 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 70%;
+    }
+
+    .titulo-cookie1 {
+        height: 60%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .descripcion-cookie1 {
+        display: none;
+    }
+    
+    .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie1 {
+        display: none;
+    }
+
+    .cookie1-trans:hover .fondo-rest1,
+    .cookie1-trans:hover .cont-info-cookie1 {
+        background-color: white;
+    }
+
+    .cookie1-trans:hover h2,
+    .cookie1-trans:hover p {
+        color: black;
+    }
+
+    .cookie1-trans:hover .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-trans:hover .cookie1-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie1-trans:hover .text-btn1-cookie1 {
+        color:black;
+    }
+
+    /*CARD 2*/
+
+    .cont-imagen-cookie2 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie2 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 55%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 1rem;
+    }
+    
+    .descripcion-cookie2 {
+        display: none;
+    }
+    
+    .btn1-cookie2 {
+        width: 50%;
+    }
+    
+    .cookie2-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie2 {
+        display: none;
+    }
+
+    .cookie2-trans:hover .fondo-rest2,
+    .cookie2-trans:hover .cont-info-cookie2 {
+        background-color: white;
+    }
+
+    .cookie2-trans:hover .btn1-cookie2 {
+        width: 50%;
+    }
+
+    .cookie2-trans:hover .cookie2-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 3*/
+
+    .cont-imagen-cookie3 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie3 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 55%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 1rem; 
+    }
+    
+    .descripcion-cookie3 {
+        display: none;
+    }
+    
+    .btn1-cookie3 {
+        width: 50%;
+    }
+    
+    .cookie3-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie3 {
+        display: none;
+    }
+
+    .cookie3-trans:hover .fondo-rest3,
+    .cookie3-trans:hover .cont-info-cookie3 {
+        background-color: white;
+    }
+
+    .cookie3-trans:hover .btn1-cookie3 {
+        width: 50%;
+    }
+
+    .cookie3-trans:hover .cookie3-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 4*/
+
+    .cont-imagen-cookie4 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie4 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+
+    .titulo-cookie4 {
+        height: 30%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 1.5rem; 
+    }
+
+    .descripcion-cookie4 {
+        display: none;
+    }
+    
+    .btn1-cookie4 {
+        width: 50%; 
+    }
+    
+    .cookie4-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie4 {
+        display: none;
+    }
+
+    .cookie4-trans:hover .fondo-rest4,
+    .cookie4-trans:hover .cont-info-cookie4 {
+        background-color: white;
+    }
+
+    .cookie4-trans:hover .btn1-cookie4 {
+        width: 50%;
+    }
+
+    .cookie4-trans:hover .cookie4-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 5*/
+
+    .cont-imagen-cookie5 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie5 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+
+    .titulo-cookie5 {
+        height: 45%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .descripcion-cookie5 {
+        display: none;
+    }
+    
+    .btn1-cookie5 {
+        width: 50%;
+    }
+    
+    .cookie5-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie5 {
+        display: none;
+    }
+
+    .cookie5-trans:hover .fondo-rest5,
+    .cookie5-trans:hover .cont-info-cookie5 {
+        background-color: white;
+    }
+
+    .cookie5-trans:hover h2,
+    .cookie5-trans:hover p {
+        color: black;
+    }
+
+    .cookie5-trans:hover .btn1-cookie5 {
+        width: 50%;
+    }
+
+    .cookie5-trans:hover .cookie5-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie5-trans:hover .text-btn1-cookie5 {
+        color:black;
+    }
+
+    /*CARD 6*/
+
+    .cont-imagen-cookie6 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie6 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+
+    .titulo-cookie6 {
+        height: 30%;
+    }
+    
+    .titulo-cookie6 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .descripcion-cookie6 {
+        display: none;
+    }
+    
+    .btn1-cookie6 {
+        width: 50%; 
+    }
+    
+    .cookie6-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie6 {
+        display: none;
+    }
+
+    .cookie6-trans:hover .fondo-rest6,
+    .cookie6-trans:hover .cont-info-cookie6{
+        background-color: white;
+    }
+
+    .cookie6-trans:hover .btn1-cookie6 {
+        width: 50%;
+    }
+
+    .cookie6-trans:hover .cookie6-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 7*/
+
+    .cont-imagen-cookie7 {
+        flex-basis: 40%;
+    }
+    
+    .cont-info-cookie7 {
+        flex-basis: 60%;
+    }
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+
+    .titulo-cookie7 {
+        height: 50%;
+    }
+
+    .titulo-cookie7 h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .descripcion-cookie7 {
+        display: none;
+    }
+    
+    .btn1-cookie7 {
+        width: 50%; 
+    }
+    
+    .cookie7-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie7 {
+        display: none;
+    }
+
+    .cookie7-trans:hover .fondo-rest7,
+    .cookie7-trans:hover .cont-info-cookie7 {
+        background-color: white;
+    }
+
+    .cookie7-trans:hover h2,
+    .cookie7-trans:hover p {
+        color: black;
+    }
+
+    .cookie7-trans:hover .btn1-cookie7 {
+        width: 50%;
+    }
+
+    .cookie7-trans:hover .cookie7-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie7-trans:hover .text-btn1-cookie7 {
+        color:black;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    body {
+        /* background-color: lightskyblue; */
+    }
+
+    /* MENU */
+
+    .menu-cabecera {
+        height: 8vh;
+    }
+
+    .btn-menu-desplegable {
+        padding-left: 3.5%;
+    }
+    
+    .btn-menu-desplegable label {
+        width: 80%;
+    }
+    
+    .icono {
+        flex-basis: 17%;
+    }
+
+    .icono-despl {
+        font-size: 1.3rem;
+    }
+
+    .cont-text-btn {
+        display: none;
+    }
+    
+    .logo-cabecera {
+        width: 60%;
+    }
+
+    .cont-padre-btn {
+        display: none;
+    }
+
+    /* DESPLEGABLE */
+
+    .cont-padre-desplegable {
+        width: 95vw;
+        border-radius: 0;
+    }
+
+    .cont-signin-btn {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .text-signin h3 {
+        font-size: 1.6rem;
+    }
+    
+    .cont-btn-cerrar label {
+        width: 60%;
+    }
+    
+    .icon-cerrar {
+        font-size: 1.7rem;
+    }
+    
+    .item-list {
+        height: 8.5vh;
+    }
+    
+    .text-item {
+        font-size: 1.8rem;
+    }
+
+    /*PROMO VIDEO*/
+
+    .cont-btn-barra {
+        flex-basis: 8%;
+    }
+    
+    .btn-promo {
+        justify-content: flex-start;
+        width: 92%;
+    }
+
+    .btn-promo div {
+        flex-basis: 40%;
+    }
+
+    .btn-promo a {
+        font-size: 0.8rem;
+    }
+    
+    .cont-btn-video {
+        flex-basis: 4%;
+    }
+    
+    .cont-btn-control {
+        width: 6%;
+    }
+    
+    .btn-control {
+        width: 100%;
+    }
+
+    .icono-pause {
+        font-size: 0.6rem;
+    }
+
+    /*PRINCIPAL*/
+
+    .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .cont-padre-fecha {
+        height: 9vh;
+    }
+
+    .cont-hijo-fecha {
+        justify-content: center;
+    }
+
+    .fecha {
+        width: 52%;
+        height: 40%;
+    }
+
+    .fecha p {
+        font-size: 0.9rem;
+    }
+
+    .cont-titulo-principal {
+        height: 10vh;
+    }
+
+    .tit-princ p {
+        font-size: 2.3rem;
+        height: auto;
+    }
+
+    /*CARD CONTENEDORES GÉNERICOS*/
+
+    .cont-padre-cookie {
+        height: 55vh;
+    }
+
+    .cont-hijo-cookie {
+        flex-direction: column;
+    }
+
+    /*BOTONES GÉNERICOS DE CARD*/
+
+    .c-btn1 a {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    /*CARD 1*/
+
+    .cont-imagen-cookie1 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie1 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest1 {
+        height: 70%;
+    }
+
+    .cont-info-cookie1 {
+        height: 100%;
+    }
+
+    .titulo-cookie1 {
+        height: 50%;
+    }
+    
+    .titulo-cookie1 h2 {
+        font-size: 1.3rem;
+    }
+    
+    .descripcion-cookie1 {
+        display: none;
+    }
+    
+    .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie1 {
+        display: none;
+    }
+
+    .cookie1-trans:hover .fondo-rest1,
+    .cookie1-trans:hover .cont-info-cookie1 {
+        background-color: white;
+    }
+
+    .cookie1-trans:hover h2,
+    .cookie1-trans:hover p {
+        color: black;
+    }
+
+    .cookie1-trans:hover .btn1-cookie1 {
+        width: 50%;
+    }
+
+    .cookie1-trans:hover .cookie1-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie1-trans:hover .text-btn1-cookie1 {
+        color:black;
+    }
+
+    /*CARD 2*/
+
+    .cont-imagen-cookie2 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie2 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest2 {
+        height: 70%;
+    }
+
+    .cont-info-cookie2 {
+        height: 70%;
+    }
+
+    .titulo-cookie2 {
+        height: 55%; 
+    }
+    
+    .titulo-cookie2 h2 {
+        font-size: 1.3rem;
+    }
+    
+    .titulo-cookie2 p {
+        font-size: 0.9rem;
+    }
+    
+    .descripcion-cookie2 {
+        display: none;
+    }
+    
+    .btn1-cookie2 {
+        width: 50%;
+    }
+    
+    .cookie2-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie2 {
+        display: none;
+    }
+
+    .cookie2-trans:hover .fondo-rest2,
+    .cookie2-trans:hover .cont-info-cookie2 {
+        background-color: white;
+    }
+
+    .cookie2-trans:hover .btn1-cookie2 {
+        width: 50%;
+    }
+
+    .cookie2-trans:hover .cookie2-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 3*/
+
+    .cont-imagen-cookie3 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie3 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest3 {
+        height: 70%;
+    }
+
+    .cont-info-cookie3 {
+        height: 70%;
+    }
+
+    .titulo-cookie3 {
+        height: 65%;
+    }
+    
+    .titulo-cookie3 h2 {
+        font-size: 1.3rem;
+    }
+    
+    .titulo-cookie3 p {
+        font-size: 0.9rem; 
+    }
+    
+    .descripcion-cookie3 {
+        display: none;
+    }
+    
+    .btn1-cookie3 {
+        width: 50%;
+    }
+    
+    .cookie3-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie3 {
+        display: none;
+    }
+
+    .cookie3-trans:hover .fondo-rest3,
+    .cookie3-trans:hover .cont-info-cookie3 {
+        background-color: white;
+    }
+
+    .cookie3-trans:hover .btn1-cookie3 {
+        width: 50%;
+    }
+
+    .cookie3-trans:hover .cookie3-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 4*/
+
+    .cont-imagen-cookie4 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie4 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest4 {
+        height: 70%;
+    }
+
+    .cont-info-cookie4 {
+        height: 70%;
+    }
+
+    .titulo-cookie4 {
+        height: 35%;
+    }
+    
+    .titulo-cookie4 h2 {
+        font-size: 1.3rem; 
+    }
+
+    .descripcion-cookie4 {
+        display: none;
+    }
+    
+    .btn1-cookie4 {
+        width: 50%; 
+    }
+    
+    .cookie4-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie4 {
+        display: none;
+    }
+
+    .cookie4-trans:hover .fondo-rest4,
+    .cookie4-trans:hover .cont-info-cookie4 {
+        background-color: white;
+    }
+
+    .cookie4-trans:hover .btn1-cookie4 {
+        width: 50%;
+    }
+
+    .cookie4-trans:hover .cookie4-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 5*/
+
+    .cont-imagen-cookie5 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie5 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest5 {
+        height: 70%;
+    }
+
+    .cont-info-cookie5 {
+        height: 70%;
+    }
+
+    .titulo-cookie5 {
+        height: 45%;
+    }
+    
+    .titulo-cookie5 h2 {
+        font-size: 1.3rem; 
+    }
+    
+    .descripcion-cookie5 {
+        display: none;
+    }
+    
+    .btn1-cookie5 {
+        width: 50%;
+    }
+    
+    .cookie5-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie5 {
+        display: none;
+    }
+
+    .cookie5-trans:hover .fondo-rest5,
+    .cookie5-trans:hover .cont-info-cookie5 {
+        background-color: white;
+    }
+
+    .cookie5-trans:hover h2,
+    .cookie5-trans:hover p {
+        color: black;
+    }
+
+    .cookie5-trans:hover .btn1-cookie5 {
+        width: 50%;
+    }
+
+    .cookie5-trans:hover .cookie5-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie5-trans:hover .text-btn1-cookie5 {
+        color:black;
+    }
+
+    /*CARD 6*/
+
+    .cont-imagen-cookie6 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie6 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest6 {
+        height: 70%;
+    }
+
+    .cont-info-cookie6 {
+        height: 70%;
+    }
+
+    .titulo-cookie6 {
+        height: 30%;
+    }
+    
+    .titulo-cookie6 h2 {
+        font-size: 1.3rem;
+    }
+    
+    .descripcion-cookie6 {
+        display: none;
+    }
+    
+    .btn1-cookie6 {
+        width: 50%; 
+    }
+    
+    .cookie6-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie6 {
+        display: none;
+    }
+
+    .cookie6-trans:hover .fondo-rest6,
+    .cookie6-trans:hover .cont-info-cookie6{
+        background-color: white;
+    }
+
+    .cookie6-trans:hover .btn1-cookie6 {
+        width: 50%;
+    }
+
+    .cookie6-trans:hover .cookie6-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    /*CARD 7*/
+
+    .cont-imagen-cookie7 {
+        flex-basis: 65%;
+        width: 100%;
+    }
+    
+    .cont-info-cookie7 {
+        flex-basis: 35%;
+        width: 100%;
+    }
+
+    .fondo-rest7 {
+        height: 70%;
+    }
+
+    .cont-info-cookie7 {
+        height: 70%;
+    }
+
+    .titulo-cookie7 {
+        height: 45%;
+    }
+
+    .titulo-cookie7 h2 {
+        font-size: 1.3rem; 
+    }
+    
+    .descripcion-cookie7 {
+        display: none;
+    }
+    
+    .btn1-cookie7 {
+        width: 50%; 
+    }
+    
+    .cookie7-btn1 {
+        width: 100%;
+    }
+    
+    .btn2-cookie7 {
+        display: none;
+    }
+
+    .cookie7-trans:hover .fondo-rest7,
+    .cookie7-trans:hover .cont-info-cookie7 {
+        background-color: white;
+    }
+
+    .cookie7-trans:hover h2,
+    .cookie7-trans:hover p {
+        color: black;
+    }
+
+    .cookie7-trans:hover .btn1-cookie7 {
+        width: 50%;
+    }
+
+    .cookie7-trans:hover .cookie7-btn1 {
+        border: none;
+        width: 100%;
+    }
+
+    .cookie7-trans:hover .text-btn1-cookie7 {
+        color:black;
+    }
+}
