@@ -381,7 +381,7 @@ body {
 
 .principal {
     width: 100vw;
-    height: 5000px;
+    /* height: 5000px; */
     /* background-color: lightblue; */
 }
 
@@ -564,7 +564,7 @@ body {
     flex-direction: row;
     justify-content: end;
     align-items: first baseline;
-    flex-basis: 22%;
+    flex-basis: 25%;
 }
 
 .cont-parrafo-cajita p {
@@ -583,7 +583,7 @@ body {
 
 .btn-neg-cajita {
     background-color: black;
-    width: 24%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -634,7 +634,7 @@ body {
     flex-direction: row;
     justify-content: end;
     align-items: first baseline;
-    flex-basis: 23%;
+    flex-basis: 30%;
 }
 
 .cont-parrafo-cajita2 p {
@@ -686,7 +686,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: end;
-    flex-basis: 42%;
+    flex-basis: 50%;
 }
 
 .cont-parrafo-cajita3 p {
