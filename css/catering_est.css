@@ -1208,11 +1208,142 @@ body {
     .text-item {
         font-size: 2.5rem;
     }
+
+    /*CAJA PRESENTACIÓN*/
+
+    .cont-presentacion {
+        height: 80vh;
+    }
+
+    .cont-hijo-pres {
+        height: 85%;
+    }
+
+    .cont-titulo h1 {
+        font-size: 4rem;
+    }
+
+    .cont-parrafo {
+        flex-basis: 22%;
+    }
+
+    .cont-parrafo p {
+        font-size: 1.3rem; 
+    }
+
+    .btn-neg {
+        width: 36%;
+    }
+
+    .text-btn-neg {
+        font-size: 1.1rem;
+    }
+
+    .imag-pres {
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    /* CAJITA 1 */
+
+    .cont-fondo {
+        height: 85%;
+    }
+
+    .cont-titulo-cajita {
+        flex-basis: 30%;
+    }
+
+    .cont-titulo-cajita h2 {
+        font-size: 2.5rem; 
+    }
+
+    .cont-parrafo-cajita {
+        flex-basis: 28%; 
+    }
+
+    .cont-parrafo-cajita p {
+        font-size: 1.2rem; 
+    }
+
+    .btn-neg-cajita {
+        width: 40%;
+    }
+
+    .text-btn-neg-cajita {
+        font-size: 1.1rem;
+    }
+
+    /* CAJITA 2 */
+
+    .cont-titulo-cajita2 {
+        flex-basis: 30%;
+    }
+
+    .cont-titulo-cajita2 h2 {
+        font-size: 2.5rem;
+    }
+
+    .cont-parrafo-cajita2 {
+        flex-basis: 33%; 
+    }
+
+    .cont-parrafo-cajita2 p {
+        font-size: 1.2rem; 
+    }
+
+    .btn-neg-cajita2 {
+        width: 50%;
+    }
+
+    /* CAJITA 3 */
+
+    .cont-fondo3 {
+        height: 80%;
+    }
+
+    .cont-titulo-cajita3 {
+        flex-basis: 25%;
+    }
+
+    .cont-titulo-cajita3 h2 {
+        font-size: 2.5rem; 
+    }
+
+    .cont-parrafo-cajita3 {
+        flex-basis: 43%; 
+    }
+
+    .cont-parrafo-cajita3 p {
+        font-size: 1.2rem; 
+    }
+
+    .cont-hijo-btns-cajita3 {
+        width: 85%; 
+    }
+
+    .text-btn2-cajita {
+        font-size: 1.1rem; 
+    }
+
+    /*SECCIÓN FOTOS*/
+
+    .cont-padre-seccion-fotos {
+        height: 100vh;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 2.5rem;
+    }
+
+    .parrafo-seccion p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 721px) and (max-width: 865px) {
     body {
-        /* background-color: lightcyan; */
+        background-color: lightcoral;
     }
 
     /* MENU */
@@ -1281,6 +1412,265 @@ body {
     
     .text-item {
         font-size: 2rem;
+    }
+    
+    /*PRINCIPAL*/
+
+    .principal {
+        width: 100vw;
+    }
+
+    /*CAJA PRESENTACIÓN*/
+
+    .cont-presentacion {
+        height: 100vh; 
+    }
+
+    .cont-hijo-pres {
+        height: 95%;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: flex-end; 
+    }
+
+    .cont-info-pres {
+        flex-basis: 50%; 
+    }
+
+    .cont-titulo {
+        flex-basis: 30%; 
+    }
+
+    .cont-titulo h1 {
+        text-align: center; 
+    }
+
+    .cont-parrafo {
+        flex-basis: 30%;
+        justify-content: center; 
+    }
+
+    .cont-parrafo p {
+        font-size: 1.5rem; 
+        flex-basis: 100%; 
+        text-align: center; 
+    }
+
+    .cont-imag-pres {
+        flex-basis: 40%; 
+        width: 90%; 
+        position: relative;
+    }
+
+    .cont-btn {
+        flex-basis: 15%; 
+        display: flex; 
+        flex-direction: row;  
+        justify-content: center; 
+    }
+
+    .imag-pres {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom; 
+        position: absolute;
+    }
+
+    /* CAJITA 1 */
+
+    .cont-caja {
+        height: 80vh; 
+        flex-direction: column; 
+        justify-content: center; 
+    }
+
+    .cont-caja-imagen {
+        flex-basis: 45%; 
+        width: 95%; 
+    }
+
+    .imagen-cajita {
+        position: absolute;
+    }
+
+    .cont-titulo-cajita h2 {
+        font-size: 2.5rem; 
+        text-align: center; 
+    }
+
+    .cont-parrafo-cajita {
+        justify-content: center;
+    }
+
+    .cont-parrafo-cajita p {
+        font-size: 1.1rem; 
+        text-align: center; 
+    }
+
+    .cont-btn-cajita {
+        flex-basis: 16%;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    .text-btn-neg-cajita {
+        font-size: 1rem;
+    }
+
+    /* CAJITA 2 */
+
+    .cont-fondo2 {
+        background-color: rgb(255, 185, 205);
+        width: 90%;
+        height: 80%;
+        z-index: 5;
+        position: absolute;
+        border-radius: 20px;
+    }
+
+    .cont-titulo-cajita2 {
+        background-color: bisque;
+        flex-basis: 22%;
+        width: 100%; /**/
+    }
+
+    .cont-titulo-cajita2 h2 {
+        font-family: 'Poetsen One', sans-serif;
+        font-size: 2.5rem; /**/
+        margin: 0;
+        text-align: center; /**/
+    }
+
+    .cont-parrafo-cajita2 {
+        background-color: lightgoldenrodyellow;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /**/
+        align-items: first baseline;
+        flex-basis: 26%; /**/
+    }
+
+    .cont-parrafo-cajita2 p {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.1rem; /**/
+        margin: 0;
+        /* background-color: lightblue; */
+        flex-basis: 92.5%;
+        text-align: center; /**/
+    }
+
+    .btn-neg-cajita2 {
+        background-color: black;
+        width: 30%; /**/
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    /* CAJITA 3 */
+
+    .cont-fondo3 {
+        background-color: rgb(255, 185, 205);
+        width: 90%;
+        height: 85%;
+        z-index: 5;
+        position: absolute;
+        border-radius: 20px;
+    }
+
+    .cont-titulo-cajita3 {
+        /* background-color: bisque; */
+        flex-basis: 18%;
+        width: 85%;
+    }
+
+    .cont-titulo-cajita3 h2 {
+        font-family: 'Poetsen One', sans-serif;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .cont-parrafo-cajita3 {
+        /* background-color: lightgoldenrodyellow; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+        flex-basis: 50%;
+    }
+
+    .cont-parrafo-cajita3 p {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3rem;
+        margin: 0;
+        /* background-color: lightblue; */
+        width: 92.5%;
+    }
+
+    .par1 {
+        /* background-color: lightpink; */
+    }
+
+    .par2 {
+        /* background-color: lightseagreen; */
+    }
+
+    .cont-btns-cajita3 {
+        /* background-color: lightgray; */
+        width: 85%;
+        flex-basis: 12%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-hijo-btns-cajita3 {
+        /* background-color: lightcyan; */
+        width: 70%;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn1-neg-cajita3 {
+        background-color: black;
+        width: 42%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    .btn2-cajita3 {
+        border: 1px solid black;
+        width: 54%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    .text-btn2-cajita {
+        text-decoration: none;
+        color: black    ;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        /* background-color: lightsalmon; */
+        width: 100%;
+        /* height: 100%; */
+        text-align: center;
     }
 }
 
