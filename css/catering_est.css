@@ -1521,6 +1521,10 @@ body {
 
     /* CAJITA 2 */
 
+    .cont-caja2 {
+        flex-direction: column-reverse; /**/
+    }
+
     .cont-fondo2 {
         background-color: rgb(255, 185, 205);
         width: 90%;
@@ -1531,7 +1535,7 @@ body {
     }
 
     .cont-titulo-cajita2 {
-        background-color: bisque;
+        /* background-color: bisque; */
         flex-basis: 22%;
         width: 100%; /**/
     }
@@ -1544,7 +1548,7 @@ body {
     }
 
     .cont-parrafo-cajita2 {
-        background-color: lightgoldenrodyellow;
+        /* background-color: lightgoldenrodyellow; */
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1564,7 +1568,7 @@ body {
 
     .btn-neg-cajita2 {
         background-color: black;
-        width: 30%; /**/
+        width: 32%; /**/
         height: 100%;
         display: flex;
         flex-direction: row;
